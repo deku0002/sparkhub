@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkhub winter hackathon project</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #D0D0D0;
+      }
+      .imgbox {
+            background-image: url("build.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+        #head {
+          font-size: 70px;
+          position: relative;
+          top: 121px;
+        }
+        .advantage1 {
+          background-image: url("ad1.jpg");
+          background-size: cover;
+          width: 100%;
+          height: 350px;
+        }
+        .advantage2 {
+          background-image: url("ad2.jpg");
+          background-size: cover;
+          width: 100%;
+          height: 350px;
+        }
+        .advantage3 {
+          background-image: url("ad3.jpg");
+          background-size: cover;
+          width: 100%;
+          height: 350px;
+        }
+        .advantage4 {
+          background-image: url("ad4.jpg");
+          background-size: cover;
+          width: 100%;
+          height: 350px;
+        }
+        .footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex " role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="imgbox text-center fw-bolder text-dark">
+    <h1 class="align-middle text-danger" id="head">
+      Bodybuilding Guide 
+      <br>
+      With Just Body-Weight
+    </h1>
+  </div>
+  <div class="fs-3 text-center">
+    <br>
+    <h1 class="text-center">What is Bodybuilding?</h1>
+    <h2></h2>
+    Bodybuilding makes not only a fit body, but also fit mind. The word bodybuilding says everything. It is so easy to understand the meaning of this word and what this sport is about. Bodybuilding is the best sport when it comes to making your body proportionally shaped and fit. This sport is not only about the body. More important, this great physical activity is about health, too. Are you looking for health benefits of weight training and aerobic exercise? Bodybuilding has it all.
+    <br>
+    <br>
+    <h1 class="text-success">In this guide you just need your Body.</h1>
+    <br>  
+  </div>
+  <div class="fs-3 fw-bold text-warning text-center bg-dark">
+    Advantages of body-weight exercise
+  </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card border border-danger">
+        <img class="advantage1 card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Convenience</h5>
+          <p class="card-text">This benefit is definitely the most obvious–when your body is your “gym,” training becomes a whole lot more convenient than getting in the car, driving 20 minutes, finding parking, going into the gym, waiting for the squat rack to free up, setting the weights to the appropriate level, changing out the weights between sets, etc. You know the drill. Bodyweight exercise can be done anywhere, anytime, so it removes a huge barrier to training.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border border-danger">
+        <img class="advantage2 card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Adaptability</h5>
+          <p class="card-text">When you’re working with weights (particularly with barbells), there are certain limitations on the ranges of motion you can use. A straight bar can only be moved around a joint in so many ways. With bodyweight training, there’s a lot more adaptability at your disposal. The ranges of motion available are literally endless, so you have many more options for adjusting your focus, modifying exercises around injuries or other limitations, and improving your capabilities across a much wider window of possibilities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border border-danger">
+        <img class="advantage3 card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Well-Roundedness</h5>
+          <p class="card-text">This is probably our favorite benefit of bodyweight exercise, the ability to work on the most important physical attributes–strength, flexibility, and body control–at once. With weight training, you’re typically only working on just one attribute–strength. And that’s okay. But what we’re after is physical autonomy, the confidence in knowing that your body is ready to handle whatever life throws at it. Strength alone won’t get you there. What will is strength combined with flexibility and overall body control. Bodyweight training makes that well-rounded approach possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border border-danger">
+        <img class="advantage4 card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Can Lead To High Level Skills</h5>
+          <p class="card-text">If you’re a total beginner, you may not be thinking about high level skills–yet. But with a skill-based approach to bodyweight exercise, you’ll see relatively quick improvements toward skills you probably never thought possible. Smaller skills add up to bigger skills, and you can start setting some pretty lofty goals. Maybe a muscle-up isn’t on your radar, and maybe it never will be. But learning to control your body across different planes opens up the possibility to work toward skills like that in the future, if you want to. And that’s pretty cool.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="p-2 bg-dark text-center text-white fw-bold fs-2">
+    Let's Begin the Journey With Some Exercises 
+  </div>
+  <br>
+  <div class="text-success fs-3">
+    This probably isn’t the first bodyweight exercise guide you’ve seen, so you’re likely aware by now that there are approximately 8,435,907,326 bodyweight exercises that exist. Whether you’re brand new to this or you’ve been around the block a few times, that can be quite overwhelming.
+    <br><br>
+    Good news: It’s a lot less complicated than the rest of the interwebz makes it seem.
+    <br><br>
+    If you’re a total newbie, the two most important exercises for you to focus on are: the squat and the bear walk. Why? Because those two exercises will lead you to just about every other bodyweight exercise you may want to learn down the line. They’ll help create the building blocks you need for progressive skills.
+    <br><br>
+    But no matter what level you’re at, this mini-library of exercises will keep you busy for a long time:
+    <br><br>
+  </div>
+  <div class="bg-danger p-1"></div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/jOz8URORp_k" title="Learn How To Flow: Locomotion, Animal Flow, Primal Movement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Locomotion</h5>
+          <p class="card-text">
+            Locomotion combines a wide range of dynamic exercises and ground-based movement combinations that are grouped into six components. The practice of locomotion challenges motor learning and brain-body connection. There is great carry over with this into whatever training discipline or sport you already practice! The result is a fun, playful and challenging workout emphasizing multi-planar, fluid movement. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/xqvCmoLULNY" title="Exercise Tutorial - Squat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Squats</h5>
+          <p class="card-text">
+            Squats tone your body well. In order to get benefit from this exercise, you need to be consistent in your workouts and should also maintain proper form with awareness. Squats is one such workout that can engage and transform your whole body. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/o3J8IaWyveI" title="Tumbling TIPS for BEGINNERS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Tumbling</h5>
+          <p class="card-text">the skill, practice, or sport of executing gymnastic feats (such as somersaults and handsprings) without the use of apparatus</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="275px" src="https://www.youtube.com/embed/EjzCljYS5Po" title="Push Ups LVL 1-10 (How To Progress Faster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Pushups</h5>
+          <p class="card-text">The upper body muscles that come into play in the push-up are the deltoids of the shoulders, the pectoral muscles of the chest, the triceps and biceps of the upper arm, and the gluteal or hip muscles, and the erector spinae of the back.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="275px" src="https://www.youtube.com/embed/zZahk7A6k_M" title="The Perfect Calisthenics PULL Workout for Beginners & Advanced" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Pulling</h5>
+          <p class="card-text">Pulling exercises are movements that utilize all of the muscles needed to perform a pulling action. These are known as our posterior chain, which includes the glutes, hamstrings, erector spinae, and traps. Stonehouse says that “pulling exercises strengthen many of the muscles responsible for good posture, mobility, strength, and flexibility.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/tM2FtvOVFGc" title="7 Impressive Bodyweight Moves Anyone Can Learn (For Beginners)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header">Hand Balancing</h5>
+          <p class="card-text">Hand balancing -- whether on blocks, the floor or a partner’s body -- is a delicate skill that can take years to master. Fortunately, there are a great variety of exercises designed to build strength and confidence for balancers of all ability levels. Some exercises can be strenuous, so before you start, take adequate time to warm up. Always use a spotter when trying a new or difficult exercise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2022 | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
